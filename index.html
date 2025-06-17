@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitZone - Premium Fitness Classes</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">FitZone</div>
+            <ul class="nav-links">
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('about')">About</a></li>
+                <li><a href="#" onclick="showPage('training')">Training</a></li>
+                <li><a href="#" onclick="showPage('booking')">Book Class</a></li>
+                <li><a href="#" onclick="showPage('pricing')">Pricing</a></li>
+                <li><a href="#" onclick="showPage('login')">Login/Signup</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page">
+        <div class="container">
+            <!-- HOME PAGE -->
+            <div id="home" class="page-content active">
+                <div class="hero">
+                    <h1>Welcome to FitZone</h1>
+                    <p>Transform Your Body, Transform Your Life</p>
+                    <a href="#" class="btn" onclick="showPage('booking')">Book Your Class Today</a>
+                </div>      
+
+                <div class="box">
+                    <div class="box-content">
+                        <h2>Why Choose FitZone?</h2>
+                        <p>We offer premium fitness classes designed to help you achieve your goals with expert guidance and a supportive community.</p>
+                        <ul>
+                            <li>Professional certified trainers</li>
+                            <li>Modern equipment and facilities</li>
+                            <li>Flexible class schedules</li>
+                            <li>Personalized workout plans</li>
+                            <li>Supportive community environment</li>
+                        </ul>
+                    </div>
+                    <div class="box-image">
+                        <div style="width: 400px; height: 300px; background: #e74c3c; border-radius: 10px; display: flex; justify-content: center; align-items: center; color: white; font-size: 20px; font-weight: bold;">
+                            Fitness Image
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="box-image">
+                        <div style="width: 400px; height: 300px; background: #34495e; border-radius: 10px; display: flex; justify-content: center; align-items: center; color: white; font-size: 20px; font-weight: bold;">
+                            Training Image
+                        </div>
+                    </div>
+                    <div class="box-content">
+                        <h2>Our Training Programs</h2>
+                        <p>From beginner-friendly sessions to advanced training, we have something for everyone.</p>
+                        <ul>
+                            <li>Strength Training Classes</li>
+                            <li>Cardio and HIIT Sessions</li>
+                            <li>Yoga and Flexibility</li>
+                            <li>Group Fitness Programs</li>
+                            <li>Personal Training Sessions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ABOUT PAGE -->
+            <div id="about" class="page-content">
+                <div class="hero">
+                    <h1>About FitZone</h1>
+                    <p>Your Premier Fitness Destination</p>
+                </div>
+
+                <div class="box">
+                    <div class="box-content">
+                        <h2>Our Story</h2>
+                        <p>Founded in 2020, FitZone has been dedicated to providing exceptional fitness experiences. We believe that fitness should be accessible, enjoyable, and transformative.</p>
+                        <p>Our mission is to create a welcoming environment where people of all fitness levels can achieve their health and wellness goals.</p>
+                        <ul>
+                            <li>Over 1000 satisfied members</li>
+                            <li>5+ years of fitness expertise</li>
+                            <li>Award-winning training programs</li>
+                            <li>State-of-the-art facilities</li>
+                            <li>Community-focused approach</li>
+                        </ul>
+                    </div>
+                    <div class="box-image">
+                        <div style="width: 400px; height: 300px; background: #27ae60; border-radius: 10px; display: flex; justify-content: center; align-items: center; color: white; font-size: 20px; font-weight: bold;">
+                            About Us Image
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trainers-grid">
+                    <div class="trainer-card">
+                        <h3>Sarah Johnson</h3>
+                        <p><strong>Head Trainer</strong></p>
+                        <p>Certified fitness instructor with 8+ years experience in strength training and nutrition.</p>
+                    </div>
+                    <div class="trainer-card">
+                        <h3>Mike Chen</h3>
+                        <p><strong>Cardio Specialist</strong></p>
+                        <p>HIIT and cardio expert, helping members achieve their weight loss and endurance goals.</p>
+                    </div>
+                    <div class="trainer-card">
+                        <h3>Emma Davis</h3>
+                        <p><strong>Yoga Instructor</strong></p>
+                        <p>Mindfulness and flexibility coach with expertise in various yoga styles and meditation.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TRAINING PAGE -->
+            <div id="training" class="page-content">
+                <div class="hero">
+                    <h1>Training Programs</h1>
+                    <p>Choose Your Path to Fitness</p>
+                </div>
+
+                <div class="classes-grid">
+                    <div class="class-card">
+                        <h3>Strength Training</h3>
+                        <p>Build muscle and increase strength with our comprehensive weight training programs.</p>
+                        <ul style="text-align: left; padding-left: 20px;">
+                            <li>Beginner to Advanced levels</li>
+                            <li>Equipment training included</li>
+                            <li>Progressive overload principles</li>
+                        </ul>
+                    </div>
+                    <div class="class-card">
+                        <h3>Cardio & HIIT</h3>
+                        <p>High-intensity workouts designed to burn calories and improve cardiovascular health.</p>
+                        <ul style="text-align: left; padding-left: 20px;">
+                            <li>Fat burning focus</li>
+                            <li>Improved endurance</li>
+                            <li>Quick 30-45 minute sessions</li>
+                        </ul>
+                    </div>
+                    <div class="class-card">
+                        <h3>Yoga & Flexibility</h3>
+                        <p>Improve flexibility, balance, and mental well-being through guided yoga practices.</p>
+                        <ul style="text-align: left; padding-left: 20px;">
+                            <li>Stress reduction</li>
+                            <li>Improved flexibility</li>
+                            <li>Mind-body connection</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="box-content">
+                        <h2>Class Schedule</h2>
+                        <p>Our classes run throughout the week with flexible timing options:</p>
+                        <ul>
+                            <li><strong>Morning Sessions:</strong> 6:00 AM - 10:00 AM</li>
+                            <li><strong>Afternoon Sessions:</strong> 12:00 PM - 3:00 PM</li>
+                            <li><strong>Evening Sessions:</strong> 5:00 PM - 9:00 PM</li>
+                            <li><strong>Weekend Special:</strong> 8:00 AM - 6:00 PM</li>
+                            <li><strong>Personal Training:</strong> By appointment</li>
+                        </ul>
+                        <p style="margin-top: 15px;"><em>All classes are limited to 15 participants to ensure personalized attention.</em></p>
+                    </div>
+                    <div class="box-image">
+                        <div style="width: 400px; height: 300px; background: #9b59b6; border-radius: 10px; display: flex; justify-content: center; align-items: center; color: white; font-size: 20px; font-weight: bold;">
+                            Schedule Image
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BOOKING PAGE -->
+            <div id="booking" class="page-content">
+                <div class="hero">
+                    <h1>Book Your Class</h1>
+                    <p>Reserve Your Spot Today</p>
+                </div>
+
+                <div class="booking-form">
+                    <h2>Class Booking Form</h2>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name:</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name:</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number:</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="classType">Class Type:</label>
+                                <select id="classType" name="classType" required>
+                                    <option value="">Select a class</option>
+                                    <option value="strength">Strength Training</option>
+                                    <option value="cardio">Cardio & HIIT</option>
+                                    <option value="yoga">Yoga & Flexibility</option>
+                                    <option value="personal">Personal Training</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="classDate">Preferred Date:</label>
+                                <input type="date" id="classDate" name="classDate" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="classTime">Preferred Time:</label>
+                                <select id="classTime" name="classTime" required>
+                                    <option value="">Select time</option>
+                                    <option value="morning">Morning (6:00 AM - 10:00 AM)</option>
+                                    <option value="afternoon">Afternoon (12:00 PM - 3:00 PM)</option>
+                                    <option value="evening">Evening (5:00 PM - 9:00 PM)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="experience">Fitness Level:</label>
+                                <select id="experience" name="experience" required>
+                                    <option value="">Select level</option>
+                                    <option value="beginner">Beginner</option>
+                                    <option value="intermediate">Intermediate</option>
+                                    <option value="advanced">Advanced</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div style="text-align: center; margin-top: 20px;">
+                            <button type="submit" class="btn">Book My Class</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- PRICING PAGE -->
+            <div id="pricing" class="page-content">
+                <div class="hero">
+                    <h1>Membership Pricing</h1>
+                    <p>Choose the Plan That Works for You</p>
+                </div>
+
+                <div class="classes-grid">
+                    <div class="class-card">
+                        <h3>Basic Plan</h3>
+                        <div class="price">$29/month</div>
+                        <ul style="text-align: left; padding-left: 20px;">
+                            <li>4 classes per month</li>
+                            <li>Access to gym equipment</li>
+                            <li>Basic fitness consultation</li>
+                            <li>Locker room access</li>
+                        </ul>
+                        <button class="btn" style="margin-top: 15px;">Choose Basic</button>
+                    </div>
+                    <div class="class-card">
+                        <h3>Premium Plan</h3>
+                        <div class="price">$49/month</div>
+                        <ul style="text-align: left; padding-left: 20px;">
+                            <li>Unlimited classes</li>
+                            <li>Personal training session</li>
+                            <li>Nutrition consultation</li>
+                            <li>Priority booking</li>
+                            <li>Guest passes (2/month)</li>
+                        </ul>
+                        <button class="btn" style="margin-top: 15px;">Choose Premium</button>
+                    </div>
+                    <div class="class-card">
+                        <h3>VIP Plan</h3>
+                        <div class="price">$79/month</div>
+                        <ul style="text-align: left; padding-left: 20px;">
+                            <li>Everything in Premium</li>
+                            <li>Weekly personal training</li>
+                            <li>Custom meal plans</li>
+                            <li>24/7 gym access</li>
+                            <li>Unlimited guest passes</li>
+                        </ul>
+                        <button class="btn" style="margin-top: 15px;">Choose VIP</button>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="box-content">
+                        <h2>Drop-In Rates</h2>
+                        <p>Not ready for a membership? Try our individual class rates:</p>
+                        <ul>
+                            <li><strong>Single Class:</strong> $15 per session</li>
+                            <li><strong>5-Class Package:</strong> $65 (save $10)</li>
+                            <li><strong>10-Class Package:</strong> $120 (save $30)</li>
+                            <li><strong>Personal Training:</strong> $60 per session</li>
+                            <li><strong>New Member Trial:</strong> First class FREE!</li>
+                        </ul>
+                        <p style="margin-top: 15px;"><em>All packages expire within 3 months of purchase.</em></p>
+                    </div>
+                    <div class="box-image">
+                        <div style="width: 400px; height: 300px; background: #f39c12; border-radius: 10px; display: flex; justify-content: center; align-items: center; color: white; font-size: 20px; font-weight: bold;">
+                            Pricing Image
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">                        
+        <p>&copy; 2025 FitZone. All rights reserved. | Contact: bksony894@gmail.com | Phone: +91 9265492946</p>
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            // Hide all pages
+            const pages = document.querySelectorAll('.page-content');
+            pages.forEach(page => {
+                page.classList.remove('active');
+            });
+            
+            // Show selected page
+            document.getElementById(pageId).classList.add('active');
+        }
+
+        // Form submission handler
+        document.querySelector('form')
+        .addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert(`Thank you for booking! We will contact you soon to confirm your class. ${e}`);
+        });
+    </script>
+</body>
+</html>

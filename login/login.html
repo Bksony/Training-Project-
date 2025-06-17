@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitZone - Login</title>
+    <link rel="stylesheet" href="login.css">
+    <style>
+   
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">FitZone</div>
+            <div class="nav-links">
+                <a href="../../index.html" onclick="goBack()">← Back to Home</a>
+                <a href="#" onclick="showSignup()">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Container -->
+    <div class="login-container">
+        <h1>Welcome Back!</h1>
+        <p>Sign in to your FitZone account</p>
+
+        <!-- Success/Error Messages -->
+        <div id="message" class="message"></div>
+
+        <!-- Login Form -->
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember">Remember me for 30 days</label>
+            </div>
+
+            <button type="submit" class="btn">Sign In</button>
+        </form>
+
+        <!-- Divider -->
+        <div class="divider">OR</div>
+
+        <!-- Social Login -->
+        <div class="social-login">
+            <button class="social-btn" onclick="socialLogin('facebook')">Continue with Facebook</button>
+            <button class="social-btn google" onclick="socialLogin('google')">Continue with Google</button>
+        </div>
+
+        <!-- Login Links -->
+        <div class="login-links">
+            <a href="#" onclick="forgotPassword()">Forgot Password?</a> |
+            <a href="#" onclick="showSignup()">Create New Account</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 FitZone. All rights reserved. | Need help? Contact: bksony894@gmail.com | Phone no: 9265492946</p>
+    </div>
+
+    <script>
+        // Login Form Handler
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const remember = document.getElementById('remember').checked;
+            
+            // Simple validation
+            if (!email || !password) {
+                showMessage('Please fill in all fields', 'error');
+                return;
+            }
+            
+            // Simulate login process
+            showMessage('Signing you in...', 'success');
+            
+            // Simulate successful login after 2 seconds
+            setTimeout(function() {
+                showMessage('Welcome back! Redirecting to dashboard...', 'success');
+                
+                // In real app, redirect to dashboard
+                setTimeout(function() {
+                    alert('Login successful! You would be redirected to your dashboard.');
+                }, 1500);
+            }, 2000);
+        });
+
+        // Show message function
+        function showMessage(text, type) {
+            const messageDiv = document.getElementById('message');
+            messageDiv.textContent = text;
+            messageDiv.className = 'message ' + type;
+            messageDiv.style.display = 'block';
+            
+            // Hide message after 5 seconds for success, keep error messages
+            if (type === 'success') {
+                setTimeout(function() {
+                    messageDiv.style.display = 'none';
+                }, 5000);
+            }
+        }
+
+        // Social login function
+        function socialLogin(provider) {
+            showMessage('Connecting to ' + provider + '...', 'success');
+            setTimeout(function() {
+                alert('Social login with ' + provider + ' would be implemented here.');
+            }, 1500);
+        }
+
+        // Forgot password function
+        function forgotPassword() {
+            const email = prompt('Please enter your email address for password reset:');
+            if (email) {
+                showMessage('Password reset link sent to ' + email, 'success');
+            }
+        }
+
+        // Show signup function
+        function showSignup() {
+            alert('Signup page would open here. For now, this is just a demo.');
+        }
+
+        // Go back function
+        function goBack() {
+            if (confirm('Go back to homepage?')) {
+                alert('You would be redirected to the homepage.');
+            }
+        }
+
+        // Demo user credentials info
+        console.log('Demo Login Credentials:');
+        console.log('Email: demo@fitzone.com');
+        console.log('Password: demo123');
+    </script>
+
+</body>
+</html>

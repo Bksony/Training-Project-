@@ -1,0 +1,269 @@
+     * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #374654;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: #34495e;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #e74c3c;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            background: #e74c3c;
+        }
+
+        /* Main Container */
+        .login-container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            border: 3px solid #e74c3c;
+            margin-top: 120px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .login-container h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: #2c3e50;
+            font-weight: bold;
+        }
+
+        .login-container p {
+            margin-bottom: 30px;
+            color: #7f8c8d;
+            font-size: 16px;
+        }
+
+        /* Form Styles */
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-group input:focus {
+            border-color: #e74c3c;
+        }
+
+        /* Checkbox */
+        .checkbox-group {
+            display: flex;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .checkbox-group input {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        .checkbox-group label {
+            font-weight: normal;
+            color: #7f8c8d;
+        }
+
+        /* Buttons */
+        .btn {
+            background: #e74c3c;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .btn:hover {
+            background: #c0392b;
+        }
+
+        .btn-secondary {
+            background: #95a5a6;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .btn-secondary:hover {
+            background: #7f8c8d;
+        }
+
+        /* Links */
+        .login-links {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .login-links a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-size: 14px;
+            margin: 0 10px;
+        }
+
+        .login-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Divider */
+        .divider {
+            margin: 25px 0;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: '';
+            display: inline-block;
+            width: 40%;
+            height: 1px;
+            background: #ddd;
+            margin: 0 10px;
+        }
+
+        /* Success/Error Messages */
+        .message {
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: bold;
+            display: none;
+        }
+
+        .message.success {
+            background: #d5f4e6;
+            color: #27ae60;
+            border: 2px solid #27ae60;
+        }
+
+        .message.error {
+            background: #fdf2f2;
+            color: #e74c3c;
+            border: 2px solid #e74c3c;
+        }
+
+        /* Social Login Buttons */
+        .social-login {
+            margin-top: 20px;
+        }
+
+        .social-btn {
+            background: #3b5998;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            width: 48%;
+            margin: 1%;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .social-btn.google {
+            background: #dd4b39;
+        }
+
+        .social-btn:hover {
+            opacity: 0.9;
+        }
+
+        /* Footer */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: #34495e;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .login-container {
+                margin: 100px 20px 80px 20px;
+                padding: 30px 20px;
+            }
+            
+            .nav-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .social-btn {
+                width: 100%;
+                margin: 5px 0;
+            }
+        }
